@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --bg: #F9F9FF;
+    --primary: #4F46E5;
+    --secondary: #0EA5E9;
+    --tertiary: #a54100;
+    --neutral: #1E293B;
+    
+    --fc-primary: #3525CD;
+    --fc-secondary: #464555;
+
+}
+
+html,body {
+    background-color: var(--bg);
+}

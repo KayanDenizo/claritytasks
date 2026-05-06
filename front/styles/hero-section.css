@@ -1,0 +1,127 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-section {
+    margin-top: 4.5rem;
+    height: 800px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &>header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .title {
+        font-size: 30px;
+        color: var(--fc-primary);
+        font-weight: bold;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        color: var(--fc-secondary);
+        margin-bottom: 48px;
+    }
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 85%;
+    background-color: #fff;
+    filter: drop-shadow(0 4px 4px 0px rgb(15, 23, 42, 5));
+    border-radius: 10px;
+    border: 1px solid #C7C4D8;
+    padding: 32px;
+}
+
+.headline {
+    padding: 0 0 32px 0;
+
+    &>p {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        color: #111C2D;
+    }
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.name,
+.email,
+.password {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #464555;
+    margin-bottom: 5px;
+}
+
+input {
+    background-color: #F9F9FF;
+    border: 1px solid #C7C4D8;
+    border-radius: 8px;
+    padding: 19px 45px;
+
+    &:focus {
+        outline: none;
+        border: 2px solid #5b5bff;
+    }
+}
+
+.btn-cadastrar {
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: #3525CD;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    padding: 16px 129px;
+
+    &:hover {
+        background-color: #3025ae;
+        transform: scale(1.05);
+    }
+}
+
+.gray-line {
+    border: 0.6px solid #C7C4D8;
+}
+
+.signup {
+    text-align: center;
+    color: #3525CD;
+    font-size: 14px;
+    text-decoration: none;
+    padding-bottom: 32px;
+
+    &:hover {
+        transition: 0.3s ease;
+        color: #3025ae;
+        transform: scale(1.05);
+        text-decoration: underline;
+    }
+}
