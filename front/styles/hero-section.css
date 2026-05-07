@@ -92,7 +92,8 @@ input {
     }
 }
 
-.btn-cadastrar {
+.btn-cadastrar,
+.btn-login {
     cursor: pointer;
     transition: 0.4s;
     background-color: #3525CD;
@@ -125,3 +126,8 @@ input {
         text-decoration: underline;
     }
 }
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    }
