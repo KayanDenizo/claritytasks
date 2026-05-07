@@ -21,38 +21,38 @@
                 <h3 class="title">Clarity Tasks</h3>
                 <p class="subtitle">Cognitive Clarity for High Achievers</p>
             </header>
-            
+
             <div class="hero-container">
                 <div class="headline">
                     <p>Crie sua Conta</p>
                 </div>
-                <form action="signin.html" id="form" method="post">
+                <form id="form-cadastro" method="post">
 
                     <div class="name">
                         <label for="name">Nome</label>
-                        <input type="text" id="name" placeholder="Seu nome Completo">
-                        <img src="" alt="icone">
+                        <input type="text" id="name" required placeholder="Seu nome Completo">
+                        <!-- <img src="" alt="icone"> -->
                     </div>
 
                     <div class="email">
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="nome@exemplo.com">
-                        <img src="" alt="icone">
+                        <input type="email" id="email" required placeholder="nome@exemplo.com">
+                        <!-- <img src="" alt="icone"> -->
                     </div>
 
                     <div class="password">
                         <label for="password">Senha</label>
-                        <input type="password" id="password" placeholder="Digite sua senha">
-                        <img src="" alt="icone">
+                        <input type="password" id="password" required placeholder="Digite sua senha">
+                        <!-- <img src="" alt="icone"> -->
                     </div>
 
                     <div class="checkbox">
-                        <input type="checkbox">
+                        <input required type="checkbox">
                         <label for="checkbox">Ao me cadastrar, eu concordo com os Termos de
                             Serviço e Política de Privacidade.</label>
                     </div>
 
-                    <button class="btn-cadastrar" id="btn-cadastrar">Cadastrar</button>
+                    <button class="btn-cadastrar" type="submit" id="btn-cadastrar">Cadastrar</button>
 
                     <p class="gray-line"></p>
 
@@ -62,11 +62,13 @@
 
 
             <div class="footer">
-               <img src="Decorative Footer Element_margin (1).png" alt="">
+                <img src="Decorative Footer Element_margin (1).png" alt="">
             </div>
         </section>
 
     </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
