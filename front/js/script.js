@@ -19,7 +19,3 @@ form.addEventListener('submit', (e) => {
     form.reset()
     window.location.href = 'signin.html'
 })
-
-// FORMULARIO LOGIN
-const usuarioSalvo = JSON.parse(localStorage.getItem('usuario'))
-
