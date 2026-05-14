@@ -1,0 +1,91 @@
+.sideNavBar {
+    display: flex;
+    position: absolute;
+    left: 0;
+    background-color: #F0F3FF;
+    height: 100dvh;
+    top: 0;
+    padding: 30px;
+}
+
+.sidebar {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+
+    &>h2 {
+        color: #3525CD;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    &>span {
+        color: #464555;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+.newTask {
+    cursor: pointer;
+    background-color: #4F46E5;
+    border-radius: 8px;
+    padding: 16px 42px;
+    font-size: 16px;
+    color: #DAD7FF;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 32px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+        background-color: #2a31cb;
+        font-weight: bold;
+    }
+}
+
+.asideNav {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+
+.items-aside {
+    padding: 16px;
+    text-decoration: none;
+    color: #464555;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #4F46E5;
+        transform: scale(1.05);
+        transition: 0.3s ease-in-out;
+        border-radius: 8px;
+        color: #DAD7FF;
+    }
+}
+
+.itemActive {
+    background-color: #4F46E5;
+    border-radius: 8px;
+    color: #DAD7FF;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    position: absolute;
+    top: 0;
+    align-content: center;
+    justify-content: space-between;
+    width: 70%;
+    background-color: #F9F9FF;
+    border: 1px solid #C7C4D8;
+}
+
+nav {}
