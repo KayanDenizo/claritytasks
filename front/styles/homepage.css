@@ -5,6 +5,7 @@
     background-color: #F0F3FF;
     height: 100dvh;
     top: 0;
+    max-width: 20%;
     padding: 30px;
 }
 
@@ -79,13 +80,18 @@
 
 header {
     display: flex;
-    position: absolute;
-    top: 0;
-    align-content: center;
-    justify-content: space-between;
-    width: 70%;
+    /* position: absolute; */
+    /* top: 0; */
+    justify-content: right;
     background-color: #F9F9FF;
-    border: 1px solid #C7C4D8;
+    border: 1px solid red;
+    width: 100%;
+    
 }
 
-nav {}
+nav {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid;
+    width: 100%;
+}
