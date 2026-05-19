@@ -1,33 +1,90 @@
+.homepage-main {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Coluna principal ao lado da sidebar.
+   Isso evita que a section de tasks vire um item da mesma linha do flex principal. */
+.homepage-content {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F9FF;
+}
+
+/* Navbar fica no topo da coluna de conteudo, separada da section de tasks. */
+header {
+    background-color: #F9F9FF;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+    padding: 24px 32px;
+}
+
+.title,
+.main,
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    gap: 24px;
+}
+
+.search-container {
+    gap: 16px;
+}
+
+/* Conteudo principal abaixo da navbar, ocupando a largura da coluna direita. */
+.hero-section-tasks {
+    width: 100%;
+    flex: 1;
+    padding: 32px;
+}
+
+/* Sidebar no fluxo, mas fixa via sticky para nao colidir com o header. */
 .sideNavBar {
     display: flex;
-    position: absolute;
-    left: 0;
-    background-color: #F0F3FF;
-    height: 100dvh;
+    flex-direction: column;
+    position: sticky;
     top: 0;
-    max-width: 20%;
+    left: 0;
+
+    background-color: #F0F3FF;
+
+    /* Em vez de max-width: 20%, use largura consistente para nao quebrar no zoom. */
+    width: 260px;
     padding: 30px;
+
+    height: 100dvh;
 }
 
 .sidebar {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: flex-start;
     gap: 5px;
+}
 
-    &>h2 {
-        color: #3525CD;
-        font-size: 30px;
-        font-weight: bold;
-    }
+.sidebar>h2 {
+    color: #3525CD;
+    font-size: 30px;
+    font-weight: bold;
+}
 
-    &>span {
-        color: #464555;
-        font-size: 14px;
-        font-weight: 600;
-    }
+.sidebar>span {
+    color: #464555;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .newTask {
@@ -41,17 +98,17 @@
     margin-top: 40px;
     margin-bottom: 32px;
     transition: 0.3s ease-in-out;
+}
 
-    &:hover {
-        transform: scale(1.05);
-        background-color: #2a31cb;
-        font-weight: bold;
-    }
+.newTask:hover {
+    transform: scale(1.05);
+    background-color: #2a31cb;
+    font-weight: bold;
 }
 
 .asideNav {
     display: flex;
-    align-items: left;
+    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -61,14 +118,14 @@
     color: #464555;
     font-size: 14px;
     transition: 0.3s ease-in-out;
+}
 
-    &:hover {
-        background-color: #4F46E5;
-        transform: scale(1.05);
-        transition: 0.3s ease-in-out;
-        border-radius: 8px;
-        color: #DAD7FF;
-    }
+.items-aside:hover {
+    background-color: #4F46E5;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    border-radius: 8px;
+    color: #DAD7FF;
 }
 
 .itemActive {
@@ -78,20 +135,27 @@
     font-weight: bold;
 }
 
-header {
-    display: flex;
-    /* position: absolute; */
-    /* top: 0; */
-    justify-content: right;
-    background-color: #F9F9FF;
-    border: 1px solid red;
-    width: 100%;
-    
+.mytasks {
+    height: 100px;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid;
-    width: 100%;
+.gray {
+    color: #464555;
+}
+
+
+.mytasks-desc {
+    margin: 10px 0 48px 0;
+
+}
+
+.add-task {
+}
+
+.add-btn {
+    padding: 10px 20px;
+    background-color: #4F46E5;
+    border: none;
+    border-radius: 8px;
+    color: #DAD7FF;
 }

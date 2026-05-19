@@ -10,7 +10,7 @@
 
 <body>
 
-    <main>
+    <main class="homepage-main">
 
         <aside class="sideNavBar">
             <div class="topContainer">
@@ -30,26 +30,51 @@
             </div>
         </aside>
 
-        <header>
-            <nav>
-                <div class="title">
-                    <p>Clarity Tasks</p>
+        <!-- Agrupa navbar e conteudo principal em uma coluna.
+             Como .homepage-main usa flex, deixar header e section soltos fazia os dois ficarem na mesma linha da sidebar. -->
+        <div class="homepage-content">
+            <header>
+                <nav>
+                    <div class="title">
+                        <p>Clarity Tasks</p>
+                    </div>
+
+                    <div class="main">
+                        <a href="#">Tasks</a>
+                        <a href="#">Focus</a>
+                        <a href="#">Calendar</a>
+
+                    </div>
+
+                    <div class="search-container">
+                        <input type="text" placeholder="Search Tasks">
+                        <p>icone de sino</p>
+                        <img src="" alt="profile">
+                    </div>
+                </nav>
+            </header>
+
+
+            <section class="hero-section-tasks">
+                <div class="mytasks">
+                    <h1>Minhas Tarefas</h1>
+                    <span class="gray mytasks-desc">Mantenha o foco no que é importante. Suas tarefas principais <br>
+                        organizadas por prioridade e tempo.</span>
                 </div>
 
-                <div class="main">
-                    <a href="#">Tasks</a>
-                    <a href="#">Focus</a>
-                    <a href="#">Calendar</a>
-
+                <div class="add-task">
+                    <div class="container-add-task">
+                        <input type="text" id="addTaskInput" placeholder="Adicionar Tarefa">
+                        <button type="submit" id="addBtnTask" class="add-btn">Adicionar</button>
+                    </div>
                 </div>
 
-                <div class="search-container">
-                    <input type="text" placeholder="Search Tasks">
-                    <p>icone de sino</p>
-                    <img src="" alt="profile">
+                <div id="taskContainer" class="all-tasks">
+                    
                 </div>
-            </nav>
-        </header>
+
+            </section>
+        </div>
 
     </main>
 
